@@ -1,0 +1,43 @@
+body,
+html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.background {
+	background-size: cover;
+	background-position: center;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.invitation-container {
+	background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
+	border-radius: 10px; /* Rounded corners */
+	padding: 20px; /* Padding for inner content */
+	max-width: 80%; /* Responsive width */
+	text-align: center; /* Center text */
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h1 {
+	font-size: 1.5em; /* Responsive font size */
+	margin-bottom: 10px; /* Space below the heading */
+}
+
+p {
+	margin: 10px 0; /* Space between paragraphs */
+}
+
+strong {
+	display: block; /* Make strong text block level */
+	margin-top: 10px; /* Space above strong text */
+}
