@@ -1,8 +1,8 @@
 import './style.css';
 import backgroundImage from '../public/background.jpg';
-import countdown from 'countdown'; // countdown.js kutubxonasini import qilamiz
+import countdown from 'countdown';
 
-// HTML tarkibi
+
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div class="background" style="background-image: url('${backgroundImage}');">
     <div class="invitation-container">
