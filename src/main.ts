@@ -19,8 +19,10 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       </div>
 `;
 
+
+
 // Countdown funksiyasi va yangilanish
-const targetDate = new Date('2024-10-19T06`:00:00');
+const targetDate = new Date('2024-10-19T05:00:00');
 
 // Countdownni yangilash funksiyasi
 function updateCountdown() {
