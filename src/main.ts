@@ -2,7 +2,6 @@ import './style.css';
 import backgroundImage from '../public/background.jpg';
 import countdown from 'countdown';
 
-
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div class="background" style="background-image: url('${backgroundImage}');">
     <div class="invitation-container">
@@ -19,17 +18,12 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       </div>
 `;
 
-
-
-// Countdown funksiyasi va yangilanish
 const targetDate = new Date('2024-10-19T05:00:00');
 
-// Countdownni yangilash funksiyasi
 function updateCountdown() {
 	countdown(
-		targetDate, // Belgilangan maqsad sanasi
+		targetDate,
 		(ts) => {
-			// Vaqt oralig'ini qaytaradi
 			document.querySelector<HTMLDivElement>('#countdown')!.innerHTML = `
         <div class="countdown-timer">
            <div>${ts.days} : ${ts.hours} : ${ts.minutes} : ${ts.seconds} </div>
@@ -41,5 +35,4 @@ function updateCountdown() {
 	);
 }
 
-// Timer har 1 sekundda yangilanadi
 setInterval(updateCountdown, 1000);
